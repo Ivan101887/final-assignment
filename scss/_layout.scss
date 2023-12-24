@@ -1,0 +1,28 @@
+.header {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  height: 391px;
+  background-image: url("../images/header_background.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  &__title {
+    padding: 5px 10px;
+    font-size: 3rem;
+    box-sizing: border-box;
+    line-height: 100%;
+    width: fit-content;
+    color: #fff;
+    background-color: #6668;
+    margin: {
+      left: 30px;
+    }
+    font-weight: 500;
+    margin-bottom: 16px;
+  }
+}
+
+.container {
+  max-width: 1200px;
+}

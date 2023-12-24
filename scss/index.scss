@@ -1,0 +1,11 @@
+@import "reset";
+@import "utils";
+.section {
+  &__title {
+    text-align: center;
+    margin: {
+      top: 20px;
+      bottom: 20px;
+    }
+  }
+}
