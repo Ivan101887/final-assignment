@@ -1,11 +1,76 @@
-@import "reset";
-@import "utils";
+
+
 .section {
+  position: relative;
   &__title {
     text-align: center;
     margin: {
       top: 20px;
       bottom: 20px;
+    }
+  }
+  &__link {
+    display: flex;
+    &::after {
+      content: url(../images/arrow-right-to-bracket-solid.svg);
+      display: block;
+      padding: {
+        left: 8px;
+      }
+    }
+    &Wrapper {
+      position: absolute;
+      right: 16px;
+      bottom: 16px;
+      text-align: right;
+    }
+  }
+  &__figure {
+    position: relative;
+    text-align: center;
+    &--link {
+      position: absolute;
+      &:nth-of-type(3) {
+        top: 280px;
+        left: 910px
+      }
+      &:nth-of-type(2) {
+        top: 480px;
+        left: 940px
+      }
+      &:nth-of-type(1) {
+        top: 450px;
+        left: 785px
+      }
+      &::after {
+        content: '';
+        background-image: url(../images/pin.png);
+        display: block;
+        box-sizing: border-box;
+        width: 50px;
+        height: 50px;
+        background: {
+          position: center;
+          size: cover;
+        }
+      }
+      animation: floating 1s ease infinite;
+    }
+  }
+  &__img {
+    position: relative;
+  }
+}
+@keyframes floating  {
+  @for $i from 0  to 100 {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(0);
     }
   }
 }

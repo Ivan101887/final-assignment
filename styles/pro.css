@@ -105,6 +105,17 @@ div, p, li, ul, header, footer, main, nav, section {
   color: #e94949;
 }
 
+.tag {
+  color: #fff;
+  background-color: rgba(102, 102, 102, 0.5333333333);
+  border-radius: 8px;
+  padding: 10px 16px;
+}
+
+.emphasis {
+  font-weight: 600;
+}
+
 .layout {
   display: flex;
   flex-direction: column;
@@ -220,94 +231,11 @@ div, p, li, ul, header, footer, main, nav, section {
   margin-bottom: 16px;
 }
 
-.container {
-  max-width: 1200px;
-}
-
-.body {
-  background-color: #DBF1F1;
-}
-
-.nav {
-  background-color: darkcyan;
-  padding: 8px;
-}
-
-.box {
-  height: 100%;
-  background-color: rgba(2, 252, 231, 0.8);
-}
-
-.banner {
-  position: absolute;
-  display: block;
-  box-sizing: border-box;
-  bottom: -220px;
-  left: 50%;
-  transform: translate(-50%, -50%) scaleX(2);
-  color: #fff;
-  text-align: center;
-}
-
-.content {
-  padding-top: 20px;
-}
-
-.desc {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-left: 60px;
-  margin-top: 15px;
-  margin-bottom: 16px;
-}
-
-.emphasis {
-  font-weight: 600;
-}
-
-.section {
-  background-color: #eee;
-  padding: 16px;
-}
-.section__title {
-  margin-bottom: 8px;
-}
-.section__paragraph {
-  margin-bottom: px;
-  line-height: 1.5em;
-}
-.section__subTitle {
-  margin-left: 1em;
-}
-.section__list {
-  gap: 20px;
-}
-.section__sub {
-  margin-left: 2em;
-}
-.section__subList {
-  gap: 8px;
-  margin-bottom: 12px;
-}
-.section__content {
-  line-height: 1.5em;
-}
-.section__content + .section__content {
-  margin-bottom: 12px;
-}
-
-.item {
-  padding: 4px 6px;
-}
-
-.tag {
-  color: #fff;
-  background-color: rgba(102, 102, 102, 0.5333333333);
-  border-radius: 8px;
-  padding: 10px 16px;
-}
-
 .footer {
   padding-top: 16px;
   padding-bottom: 16px;
+}
+
+.container {
+  max-width: 1200px;
 }

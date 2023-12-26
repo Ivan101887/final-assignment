@@ -1,10 +1,3 @@
-// Rest of your code goes here...
-@import "reset";
-@import "utils";
-@import "layout";
-.body {
-  background-color: #DBF1F1;
-}
 .nav {
   background-color: darkcyan;
   padding: 8px;
@@ -17,7 +10,7 @@
   position: absolute;
   display: block;
   box-sizing: border-box;
-  bottom: -220px;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%) scaleX(2);
   color: #fff;
@@ -47,7 +40,6 @@
     margin-bottom: 8px;
   }
   &__paragraph {
-    margin-bottom: px;
     line-height: 1.5em;
   }
   &__subTitle {
@@ -73,16 +65,3 @@
 .item {
   padding: 4px 6px;
 }
-.tag {
-  color: #fff;
-  background-color: #6668;
-  border-radius: 8px;
-  padding: 10px 16px;
-}
-.footer {
-  padding: {
-    top: 16px;
-    bottom: 16px;
-  }
-}
-

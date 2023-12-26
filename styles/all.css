@@ -58,11 +58,35 @@ div, p, li, ul, header, footer, main, nav, section {
 .flex-col {
   flex-direction: column;
 }
+.flex.gap-1 {
+  gap: 2px;
+}
 .flex.gap-2 {
   gap: 4px;
 }
+.flex.gap-3 {
+  gap: 6px;
+}
+.flex.gap-4 {
+  gap: 8px;
+}
 .flex.justify-center {
   justify-content: center;
+}
+.flex.items-center {
+  align-items: center;
+}
+.flex.items-end {
+  align-items: flex-end;
+}
+.flex > .grow-1 {
+  flex-grow: 1;
+}
+.flex > .shrink-none {
+  flex-shrink: 0;
+}
+.flex > .flex-dividend {
+  flex: 1 0 50%;
 }
 
 .text-sm {
@@ -70,9 +94,18 @@ div, p, li, ul, header, footer, main, nav, section {
 }
 .text-md {
   font-size: 1rem;
+  line-height: 1.5em;
 }
 .text-lg {
   font-size: 1.5rem;
+}
+.text-lg-s {
+  font-size: 18px;
+  line-height: 1.5em;
+}
+.text-lg-m {
+  font-size: 1.25rem;
+  line-height: 1.5em;
 }
 .text-xl {
   font-size: 2rem;
@@ -80,29 +113,78 @@ div, p, li, ul, header, footer, main, nav, section {
 .text-secondary {
   color: #4472C5;
 }
+.text-secondary-dark {
+  color: #03446A;
+}
+.text-darkRed {
+  color: #ae2024;
+}
 .text-pink {
   color: #e45970;
 }
 .text-highlight {
   color: #886622;
 }
+.text-white {
+  color: #fff;
+}
 .text-bold {
   font-weight: 600;
+}
+
+.indent-1 {
+  padding-left: 16px;
+}
+.indent-2 {
+  padding-left: 32px;
+}
+.indent-3 {
+  padding-left: 48px;
 }
 
 .btn {
   border-radius: 4px;
 }
 
-.link {
-  color: #eee;
+.link-underline {
   text-decoration: underline;
 }
-.link:hover {
+.link-light {
+  color: #eee;
+}
+.link-light:hover {
   color: rgb(96, 231, 238);
 }
-.link:active {
+.link-light:active {
   color: #e94949;
+}
+.link-dark {
+  color: rgb(243, 33, 5);
+}
+.link-dark:hover {
+  color: rgb(96, 231, 238);
+}
+.link-dark:active {
+  color: #e94949;
+}
+
+.bg-light {
+  background-color: #c0ffee !important;
+}
+
+.tag {
+  color: #fff;
+  background-color: rgba(102, 102, 102, 0.5333333333);
+  border-radius: 8px;
+  padding: 10px 16px;
+}
+
+.emphasis {
+  font-weight: 600;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .layout {
@@ -220,6 +302,82 @@ div, p, li, ul, header, footer, main, nav, section {
   margin-bottom: 16px;
 }
 
+.footer {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
 .container {
   max-width: 1200px;
+}
+
+.nav {
+  background-color: darkcyan;
+  padding: 8px;
+}
+
+.box {
+  height: 100%;
+  background-color: rgba(2, 252, 231, 0.8);
+}
+
+.banner {
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%) scaleX(2);
+  color: #fff;
+  text-align: center;
+}
+
+.content {
+  padding-top: 20px;
+}
+
+.desc {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-left: 60px;
+  margin-top: 15px;
+  margin-bottom: 16px;
+}
+
+.emphasis {
+  font-weight: 600;
+}
+
+.section {
+  background-color: #eee;
+  padding: 16px;
+}
+.section__title {
+  margin-bottom: 8px;
+}
+.section__paragraph {
+  line-height: 1.5em;
+}
+.section__subTitle {
+  margin-left: 1em;
+}
+.section__list {
+  gap: 20px;
+}
+.section__sub {
+  margin-left: 2em;
+}
+.section__subList {
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.section__content {
+  line-height: 1.5em;
+}
+.section__content + .section__content {
+  margin-bottom: 12px;
+}
+
+.item {
+  padding: 4px 6px;
 }

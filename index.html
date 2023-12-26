@@ -7,22 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="keywords" content="">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/all.min.css">
     <link rel="stylesheet" href="./styles/slider.min.css">
-    <link rel="stylesheet" href="./styles/pro.min.css">
     <link rel="stylesheet" href="./styles/index.min.css">
     <title>國家領隊的足跡</title>
   </head>
 
   <body>
-    <nav class="nav">
-      <ul class="list flex gap-2">
-        <li class="item btn"><a class="link" href="#Home">背景介紹</a></li>
-        <li class="item btn"><a class="link" href="#Introduce">主題介紹</a></li>
-        <li class="item btn"><a class="link" href="#Layout">排版規劃</a></li>
-        <li class="item btn"><a class="link" href="#Timeline">時程規劃</a></li>
-      </ul>
-    </nav>
     <header class="header">
       <div class="box">
         <div class="content">
@@ -31,42 +23,77 @@
         <img src="./images/bannerCity.svg" alt="banner" class="banner">
       </div>
     </header>
-    <main>
-      <section>
-        <h2 class="text-xl text-bold section__title text-highlight">
-          歡迎來到「國家領隊的足跡」，一趟探索領袖的旅程之旅。
-          <br>
-          這裡我們將一窺國家領隊的生平、領導風格和卓越影響力，以及他們在國際事務中的出色表現。
-        </h2>
-        <div class="slider_container" >
-          <div>
-            <img src="./images/photo_1.jpg" alt="pure css slider" width="400" height="280" />
+    <main class="flex">
+      <nav class="nav">
+        <ul class="list">
+          <li class="item btn">
+            <a class="link link-light" href="/">首頁</a>
+          </li>
+          <li class="item btn">
+            <a class="link link-light" href="introduction.html">導遊經歷介紹</a>
+          </li>
+          <li class="item btn">
+            <a class="link link-light" href="journey-miaoli.html">苗栗行程</a>
+          </li>
+          <li class="item btn">
+            <a class="link link-light" href="journey-nantou.html">南投行程</a>
+          </li>
+          <li class="item btn">
+            <a class="link link-light" href="journey-taichung.html">台中行程</a>
+          </li>
+          <li class="item btn">
+            <a class="link link-light" href="summary.html">總結</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="middle grow-1">
+        <section>
+          <h2 class="text-xl text-bold section__title text-highlight">
+            歡迎來到「國家領隊的足跡」，一趟探索領袖的旅程之旅。
+            <br>
+            這裡我們將一窺國家領隊的生平、領導風格和卓越影響力，以及他們在國際事務中的出色表現。
+          </h2>
+          <div class="slider_container" >
+            <div>
+              <img src="./images/photo_1.jpg" alt="pure css slider" width="400" height="280" />
+            </div>
+            <div>
+              <img src="./images/photo_2.jpg" alt="pure css slider" width="400" height="280" />
+            </div>
+            <div>
+              <img src="./images/photo_5.jpg" alt="pure css slider" width="400" height="280" />
+            </div>
+            <div>
+              <img src="./images/photo_3.jpg" alt="pure css slider" width="400" height="280" />
+            </div>
+            <div>
+              <img src="./images/photo_4.jpg" alt="pure css slider" width="400" height="280" />
+            </div>
           </div>
-          <div>
-            <img src="./images/photo_2.jpg" alt="pure css slider" width="400" height="280" />
+        </section>
+        <section class="section bg-light">
+          <figure class="section__figure">
+            <img class="section__img" src="./images/taiwan.jpg" alt="" width="" height="1200">
+            <a class="section__figure--link" href="./journey-taichung.html"></a>
+            <a class="section__figure--link" href="./journey-nantou.html"></a>
+            <a class="section__figure--link" href="./journey-miaoli.html"></a>
+          </figure>
+        </section>
+        <section class="section">
+          <p class="text-lg section__paragraph">
+            國家領隊穿梭在各個城市之間，為旅客帶來不同的體驗，也為旅客帶來不同的感動。
+          </p>
+          <p class="text-lg section__paragraph">
+            作為<span class="emphasis text-secondary">國家觀光導遊領隊</span>，想邀請各位跟上我的腳步，踏上旅程，體驗寶島風光。
+          </p>
+          <p class="text-lg section__paragraph">
+            每趟旅行都會有新的體驗，讓我來分享每一次旅程不同的<span class="text-pink">喜悅</span>與<span class="text-pink">感動</span>。
+          </p>
+          <div class="section__linkWrapper">
+            <a href="introduction.html" class="section__link link link-dark">跟上我的腳步，看看我都走過那些地方吧~~~</a>
           </div>
-          <div>
-            <img src="./images/photo_5.jpg" alt="pure css slider" width="400" height="280" />
-          </div>
-          <div>
-            <img src="./images/photo_3.jpg" alt="pure css slider" width="400" height="280" />
-          </div>
-          <div>
-            <img src="./images/photo_4.jpg" alt="pure css slider" width="400" height="280" />
-          </div>
-        </div>
-      </section>
-      <section class="section" id="Home">
-        <p class="text-lg section__paragraph">
-          國家領隊穿梭在各個城市之間，為旅客帶來不同的體驗，也為旅客帶來不同的感動。
-        </p>
-        <p class="text-lg section__paragraph">
-          作為<span class="emphasis text-secondary">國家觀光導遊領隊</span>，想邀請各位跟上我的腳步，踏上旅程，體驗寶島風光。
-        </p>
-        <p class="text-lg section__paragraph">
-          每趟旅行都會有新的體驗，讓我來分享每一次旅程不同的<span class="text-pink">喜悅</span>與<span class="text-pink">感動</span>。
-        </p>
-      </section>
+        </section>
+      </div>
     </main>
 
     <footer class="footer">
