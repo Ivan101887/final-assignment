@@ -25,6 +25,10 @@
       text-align: right;
     }
   }
+  // 地圖上顯示地標，並且讓地標有浮動的效果
+  // 地圖圖片元素容器使用相對定位，讓地標元素使用絕對定位
+  // 利用:nth-of-type()偽類選擇器，選擇第一個、第二個、第三個地標元素，並且分別定位
+  // 地標icon用偽元素::after，設定背景圖片為pin.png，並且設定寬高為50px
   &__figure {
     position: relative;
     text-align: center;
@@ -62,15 +66,44 @@
   }
 }
 @keyframes floating  {
-  @for $i from 0  to 100 {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(10px);
-    }
-    100% {
-      transform: translateY(0);
-    }
+  0% {
+    transform: translateY(0);
   }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+// 引導至企畫書的連結動畫，在滑鼠移動到連結上時，連結會旋轉360度，並且透過透明度的變化，呈現淡入的效果
+.prodiv {
+  position: fixed;
+  z-index: 99;
+  top: 200px;
+  right: 10px;
+  width: 170px;
+  height: 40px;
+  box-shadow: 3px 4px 0 0 #1564ad;
+  background: linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+  border-radius: 5px;
+  border: 1px solid #337bc4;
+  display: inline-block;
+  cursor: cell;
+  color: #ffffff;
+  font-family: "Cooper Black";
+  font-size: 32px;
+  padding: 5px 10px;
+  text-shadow: 0 1px 0 #528ecc;
+  text-align :center;
+  opacity: 0;
+  &:hover {
+    transition: 1s;
+    animation: proposal 3s;
+    -webkit-text-stroke: 1px red;
+  }
+}
+@keyframes proposal  {
+  from {transform: rotate(0deg)};
+  to {transform: rotate(360deg)};
 }

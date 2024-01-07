@@ -1,3 +1,6 @@
+// header 網頁頂部元素相對定位，作為子元素的定位參考點
+// 為了讓 header 能夠覆蓋在其他元素上方，z-index 設定為 1
+// 為顯示背景圖片指定元素高度391px，並且利用overflow hidden 確保背景圖片不會顯示超過header
 .header {
   position: relative;
   z-index: 1;
@@ -7,6 +10,9 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  // 網頁主標題設定文字大小為 3rem，並且設定文字顏色為白色
+  // 為標題區塊設定背景顏色為 #6668，並且設定上下 5px 左右各 10px 的內距
+  // css 屬性 box-sizing 設定為 border-box，讓元素的寬度與高度包含 padding 與 border
   &__title {
     padding: 5px 10px;
     font-size: 3rem;
@@ -22,6 +28,7 @@
     margin-bottom: 16px;
   }
 }
+// footer 網頁底部元素垂直內距，上下各 16px，讓視覺比較舒適
 .footer {
   padding: {
     top: 16px;
